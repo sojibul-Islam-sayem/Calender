@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/8bac4d4a65.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen Poppins">
+    <div class="container mx-auto w-[400px] bg-white rounded-lg shadow-md">
+        <!-- month date -->
+        <div class="bg-[#575ae6]">
+            <div class="flex px-4 py-4  text-white justify-between items-center">
+                <div>
+                    <button class="font-bold bg-white px-2 py-1"><i class="fa-solid  text-[#575ae6] fa-angle-left"></i></button>
+                </div>
+                <div class="mx-auto">
+                    <div class="flex space-x-3 font-semibold">
+                        <select id="month-select"
+                            class="bg-[#575ae6] text-white border-none outline-none cursor-pointer">
+                            <option value="1">January</option>
+                            <option value="2" selected>February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <select id="year-select"
+                            class="bg-[#575ae6] text-white border-none outline-none cursor-pointer">
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024" selected>2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <button class="font-bold bg-white px-2 py-1"><i class=" fa-solid text-[#575ae6] fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="flex font-medium text-white space-x-1 pl-2">
+                <h3>Feb |</h3>
+                <h3>2024</h3>
+            </div>
+        </div>
+
+        <!-- days -->
+        <div>
+            <ul class="grid grid-cols-7 text-xs font-semibold px-4 mt-3 text-center">
+                <li>SUN</li>
+                <li>MON</li>
+                <li>TUE</li>
+                <li>WED</li>
+                <li>THU</li>
+                <li>FRI</li>
+                <li>SAT</li>
+            </ul>
+        </div>
+        <!-- date -->
+        <div class="grid grid-cols-7 gap-y-2 p-4 font-medium">
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-gray-100 text-gray-400">28</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-gray-100 text-gray-400">29</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-gray-100 text-gray-400">30</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">1</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">2</button>
+            </div>
+            <div class="flex items-center bg-gradient-to-l from-[#575ae633] to-white justify-center">
+                <button class="w-8 h-8 rounded-full bg-[#575ae6] text-white">3</button>
+            </div>
+            <div class="flex items-center rounded-r-full bg-gradient-to-r from-[#575ae633] to-white justify-center">
+                <button class="w-8 h-8 rounded-full hover:text-white">4</button>
+            </div>
+            <div class="flex items-center bg-gradient-to-l from-[#575ae633] to-white justify-center">
+                <button class="w-8 h-8 rounded-full hover:text-white">5</button>
+            </div>
+            <div class="flex items-center bg-[#575ae633] justify-center">
+                <button class="w-8 h-8 rounded-full hover:text-white">6</button>
+            </div>
+            <div class="flex items-center bg-[#575ae633] justify-center">
+                <button class="w-8 h-8 rounded-full hover:text-white">7</button>
+            </div>
+            <div class="flex items-center rounded-r-full bg-gradient-to-r from-[#575ae633] to-white justify-center">
+                <button class="w-8 h-8 rounded-full bg-[#575ae6] text-white">8</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">9</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">10</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">11</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">12</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">13</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">14</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">15</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">16</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">17</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">18</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">19</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">20</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">21</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">22</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">23</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">24</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">25</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">26</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">27</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">28</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-[#575ae6] hover:text-white">29</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-gray-100 text-gray-400">1</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-gray-100  text-gray-400">2</button>
+            </div>
+            <div class="flex items-center justify-center">
+                <button class="w-8 h-8 rounded-full hover:bg-gray-100  text-gray-400">3</button>
+            </div>
+
+
+        </div>
+</body>
+
+</html>
